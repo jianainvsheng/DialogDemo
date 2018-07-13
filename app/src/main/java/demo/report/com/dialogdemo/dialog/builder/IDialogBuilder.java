@@ -15,20 +15,19 @@ public interface IDialogBuilder<D extends IDialogBuilder<D>> {
      * the theme in the dialog
      * @return
      */
-    public @StyleRes
-    int getThemeStyleResId();
+     @StyleRes int getThemeStyleResId();
 
     /**
      * set the theme style id
      * @param themeStyleResId
      */
-    public D setThemeStyleResId(@StyleRes int themeStyleResId);
+     D setThemeStyleResId(@StyleRes int themeStyleResId);
 
     /**
      * return the need helper
      * @return
      */
-    public Class<? extends BaseDialogHelper<D>> getHelperClass();
+     Class<? extends BaseDialogHelper<D>> getHelperClass();
 
 
     /**

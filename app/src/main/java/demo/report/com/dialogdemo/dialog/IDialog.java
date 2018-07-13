@@ -15,12 +15,12 @@ public interface IDialog<D extends IDialogBuilder<D>> {
      * init the dialog
      * @param context
      */
-    public void initDialog(Context context, D data);
+     void initDialog(Context context, D data);
 
     /**
      * create the helper
      * @return
      */
-    public BaseDialogHelper<D> onCreateHelper(Context context, D data) throws NoSuchMethodException;
+     BaseDialogHelper<D> onCreateHelper(Context context, D data) throws NoSuchMethodException;
 
 }
