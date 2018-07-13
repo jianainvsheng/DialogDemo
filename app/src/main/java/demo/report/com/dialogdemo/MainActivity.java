@@ -38,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
             dialog.show();
 
         }else if(view.getId() == R.id.OrderfillDeclareDialog_new_Builder_test){
-
-            //支持传递外部builder 但是必须是继承dialog本身的builder 在helper中需要转型一下
             Dialog dialog = GNormalDialog.onCreateBuiler(new TestNormalBuilder(this))
                     .setThemeStyleResId(R.style.dialog_style)
                     .setHelperClass(TestHelper.class)
